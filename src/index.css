@@ -11,3 +11,82 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+button{
+  all: unset;
+  cursor: pointer;
+  padding: 15px;
+  width: 300px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+input {
+  margin: 15px;
+  border: 0px solid transparent;
+  border-bottom: 2px solid white;
+  color: #282626;
+  background: transparent;
+  width: 90%;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+input:focus {
+  outline: none;
+}
+#container{
+  display: flex;
+  /* flex-direction: column; */
+  background-color: rgb(9, 159, 204);
+  width: 90vw;
+  height: 95vh;
+  margin: auto;
+  /* margin-top: 80px; */
+}
+
+.element{
+  display: flex;
+  width: 50%;
+  height: 48%;
+  flex-direction: column;
+  /* margin: auto; */
+  margin-top: 50px;
+  align-items: center;
+}
+
+
+#dropdown-selector{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: larger;
+}
+
+#dropdown-selector p{
+  margin: 0%;
+}
+
+#dropdown-box{
+  /* cursor: pointer; */
+  padding: 15px;
+  width: 325px;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 2px;
+}
+
+.dropdown-item{
+  cursor: pointer;
+  padding: 5px;
+  margin: 4px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.dropdown-item:hover{
+  background-color: rgb(219, 217, 217);
+
+}
+.dropdown-item p{
+  font-size: large;
+  margin: 0%;
+}
