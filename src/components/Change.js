@@ -5,11 +5,11 @@ import ChangeItems from "./ChangeItems";
 function Change(props) {
   const { items, addDropdownItem, deleteDropdownItem, setDropdownTitle } =
     props;
-    // handling add a new title on pressing enter in input bar if not empty 
+  // handling add a new title on pressing enter in input bar if not empty
   const handleAddTitle = (e) => {
     if (e.key === "Enter") {
       if (!e.target.value) {
-        // showing error if after pressing enter, title of dropdown list is empty 
+        // showing error if after pressing enter, title of dropdown list is empty
         toast.error("Title of dropdown list should not be empty!", {
           position: "top-left",
           autoClose: 5000,
@@ -23,12 +23,12 @@ function Change(props) {
         return;
       }
       if (items.length === 0) {
-        // if no elements in drop down list before adding so set title of dropdown to be "Select" on first element add 
+      // if no elements in drop down list before adding so set title of dropdown to be "Select" on first element add
         setDropdownTitle("Select");
       }
-    //   adding title provided by input value 
+      //   adding title provided by input value
       addDropdownItem(e.target.value);
-    //   and setting input value to be "" after adding  
+      //   and setting input value to be "" after adding
       e.target.value = "";
     }
   };

@@ -12,7 +12,7 @@ function App() {
   // setting the drop down title to the dropdown element clicked in drop down list
   const [dropdownTitle, setDropdownTitle] = useState("Select");
 
-  // adding new item to items array 
+  // adding new item to items array
   const addDropdownItem = (title) => {
     toast.success("Dropdown item added successfully!", {
       position: "top-left",
@@ -24,11 +24,11 @@ function App() {
       progress: undefined,
       theme: "light",
     });
-    // adding the title of item provided to add 
+    // adding the title of item provided to add
     setItems([...items, title]);
   };
 
-  // deleting a item from items array 
+  // deleting a item from items array
   const deleteDropdownItem = (id) => {
     toast.success("Dropdown item deleted successfully!", {
       position: "top-left",
@@ -41,14 +41,14 @@ function App() {
       theme: "light",
     });
     if (items.length === 1) {
-      // if after deleting there are no list items in items array 
-      // hiding the dropdown and setting it's title to "No items in drop down" 
+      // if after deleting there are no list items in items array
+      // hiding the dropdown and setting it's title to "No items in drop down"
       setShowDropdown(false);
       setDropdownTitle("No items in drop down");
     } else {
       setDropdownTitle("Select");
     }
-    // removing the specific item from list 
+    // removing the specific item from list
     setItems(
       items.filter((value, index) => {
         return index !== id;
