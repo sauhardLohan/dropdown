@@ -39,7 +39,9 @@ input:focus {
   /* flex-direction: column; */
   background-color: rgb(9, 159, 204);
   width: 90vw;
-  height: 95vh;
+  min-height: 95vh;
+  height: fit-content;
+  padding-bottom: 20px;
   margin: auto;
   /* margin-top: 80px; */
 }
