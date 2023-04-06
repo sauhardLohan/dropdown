@@ -10,7 +10,7 @@ function ChangeItems(props) {
           deleteDropdownItem(id);
         }}
       >
-        <img width={20}  src="https://cdn-icons-png.flaticon.com/512/1617/1617543.png" />
+        <img width={20} alt="delete-icon" src="https://cdn-icons-png.flaticon.com/512/1617/1617543.png" />
       </div>
     </div>
   );
