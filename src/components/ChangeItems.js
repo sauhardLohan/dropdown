@@ -4,14 +4,14 @@ function ChangeItems(props) {
     <div className="dropdown-item" style={{ cursor: "default" }}>
       <p>{item}</p>
       {/* deleting drop down item on clicking of X button  */}
-      <p
-        style={{ cursor: "pointer" }}
+      <div
+        style={{ cursor: "pointer",marginTop:5 }}
         onClick={() => {
           deleteDropdownItem(id);
         }}
       >
-        X
-      </p>
+        <img width={20}  src="https://cdn-icons-png.flaticon.com/512/1617/1617543.png" />
+      </div>
     </div>
   );
 }
