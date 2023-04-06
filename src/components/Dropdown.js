@@ -15,7 +15,7 @@ function Dropdown(props) {
   };
   //to set showDropdown state to be false
   // so that drop down list won't be visible
-  const handleShowDropdown = () => {
+  const handleHideDropdown = () => {
     setShowDropdown(false);
   };
   return (
@@ -24,7 +24,7 @@ function Dropdown(props) {
         <h2>Should you use a dropdown?</h2>
       </div>
       <div  style={{ width: "45%", display: "flex", flexDirection: "column" }}>
-        {/* adding event listener onMouseOver so that when when mouse enters the drop down bar for title the list items will bre shown
+        {/* adding event listener onMouseOver so that when when mouse enters the drop down title bar the list items will be shown
             by setting showDropdown state to be true only if there are elements in list*/}
         <button
           className="button"
@@ -47,7 +47,7 @@ function Dropdown(props) {
                   item={item}
                   key={`dropdown-${i}`}
                   handleSettingTitle={handleSettingTitle}
-                  handleShowDropdown={handleShowDropdown}
+                  handleHideDropdown={handleHideDropdown}
                   borderStyle={(i === items.length - 1) ? false :true }
                 />
               );

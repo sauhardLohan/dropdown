@@ -1,5 +1,5 @@
 function DropdownItems(props) {
-  const { item, handleSettingTitle, handleShowDropdown,borderStyle } = props;
+  const { item, handleSettingTitle, handleHideDropdown,borderStyle } = props;
   return (
     // on clicking a item in drop down list setting the title of drop down list to be it's value
     // and also to set showDropdown state to be false
@@ -8,7 +8,7 @@ function DropdownItems(props) {
       className="dropdown-item"
       onClick={() => {
         handleSettingTitle(item);
-        handleShowDropdown();
+        handleHideDropdown();
       }}
       style={borderStyle? {borderBottom:"1px solid gray"}:{border:0}}
     >
