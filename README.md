@@ -68,3 +68,20 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## Used fontawesome & react-fontawesome to show font awesome icon for angle down icon
+
+to install:
+
+### `npm i --save @fortawesome/fontawesome`
+### `npm i --save @fortawesome/react-fontawesome`
+### `npm i --save @fortawesome/fontawesome-free-solid`
+### `npm i --save @fortawesome/fontawesome-free-regular`
+### `npm i --save @fortawesome/fontawesome-svg-core`
+
+## Used react-toastify to show notifications
+
+to install:
+
+### `npm i react-toastify`
